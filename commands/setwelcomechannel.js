@@ -8,6 +8,7 @@ import {
   PermissionFlagsBits,
   ChannelType,
   EmbedBuilder,
+  MessageFlags,
 } from 'discord.js';
 import db from '../config/database.js';
 
@@ -30,7 +31,7 @@ export const data = new SlashCommandBuilder()
  */
 export async function execute(interaction) {
   // Defer the reply so we have time to create the webhook
-  await interaction.deferReply({ ephemeral: true });
+  await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
   const channel = interaction.options.getChannel('channel');
 

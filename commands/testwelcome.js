@@ -7,6 +7,7 @@
 import {
   SlashCommandBuilder,
   PermissionFlagsBits,
+  MessageFlags,
 } from 'discord.js';
 import db from '../config/database.js';
 import { sendWelcomeMessage } from '../utils/welcomeEmbed.js';
@@ -27,7 +28,7 @@ export const data = new SlashCommandBuilder()
  * @param {import('discord.js').ChatInputCommandInteraction} interaction
  */
 export async function execute(interaction) {
-  await interaction.deferReply({ ephemeral: true });
+  await interaction.deferReply({ flags: MessageFlags.Ephemeral });
 
   // Check that the welcome channel has been configured
   const settings = db.getWelcomeSettings(interaction.guildId);
