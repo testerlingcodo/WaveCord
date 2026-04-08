@@ -90,7 +90,7 @@ export async function sendWelcomeMessage(webhookUrl, member) {
 
   try {
     await webhook.send({
-      username: `${member.guild.name} | Welcome Bot`,
+      username: `${member.guild.name} | WaveCord`,
       avatarURL: member.guild.iconURL({ size: 128 }) ?? undefined,
       embeds: [embed],
     });

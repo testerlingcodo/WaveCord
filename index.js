@@ -79,5 +79,5 @@ process.on('uncaughtException', (error) => {
 });
 
 // ── Log in ───────────────────────────────────────────────────────────────────
-console.log('\n🚀  Starting Discord Welcome Bot…');
+console.log('\n🚀  Starting WaveCord…');
 await client.login(DISCORD_TOKEN);

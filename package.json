@@ -1,7 +1,7 @@
 {
-  "name": "discord-welcome-bot",
+  "name": "wavecord",
   "version": "1.0.0",
-  "description": "A Discord bot with slash commands and webhook-based welcome messages",
+  "description": "WaveCord — A Discord bot with slash commands and webhook-based welcome messages",
   "main": "index.js",
   "type": "module",
   "scripts": {
