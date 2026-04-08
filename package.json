@@ -1,0 +1,20 @@
+{
+  "name": "discord-welcome-bot",
+  "version": "1.0.0",
+  "description": "A Discord bot with slash commands and webhook-based welcome messages",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "deploy": "node deploy-commands.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
